@@ -21,11 +21,41 @@ Run the tool with the following syntax:
 The filename should include:
 
 * **Country code**
-* **4-digit map version number**
+* **4-digit region code** (see explanation below)
 * **Date** in the format `YYMMDD`
 * **Additional characters**, which are device-specific and must match expected patterns (currently unknown but required). Use the examples below as templates.
 
 **Example:** `-o PL00002507043EJ20506N068` (for Poland)
+
+### Region Code Explanation
+
+The **4-digit map version number** in the filename actually represents a region within the given country.
+- `0000` means the map covers the *whole country*.
+- Other 4-digit codes correspond to specific regions (e.g., voivodeships in Poland).
+
+#### Example: Poland Region Codes
+
+| Region                | Example Filename                       |
+|-----------------------|----------------------------------------|
+|dolnośląskie          | PL01002505163F423C01X01R|
+|kujawsko-pomorskie    | PL02002505163GN21A01N01K|
+|łódzkie               | PL03002505163H622Q01O01M|
+|lubelskie             | PL04002505163JF22U01M024|
+|lubuskie              | PL05002505163EY21Z01701U|
+|małopolskie           | PL06002505163HT24N01I01C|
+|mazowieckie           | PL07002505163HX21L02H02L|
+|opolskie              | PL08002505163GG23Y015019|
+|podkarpackie          | PL09002505163J424C01K01U|
+|podlaskie             | PL10002505163JE20L01J02B|
+|pomorskie             | PL11002505163GB20401W01I|
+|śląskie               | PL12002505163H524201901Q|
+|świętokrzyskie        | PL13002505163I723T01F017|
+|warmińsko-mazurskie   | PL14002505163HU20J02D01H|
+|wielkopolskie         | PL15002505163FQ21E02502P|
+|zachodniopomorskie    | PL16002505163EO20F01U024|
+|**Poland (whole)**    | PL00002505163E920007106D|
+|Czech Republic        | CZ00002505163DD24304G02J|
+
 
 ### Example Filenames by Country
 | Country             | Example Filename             |
